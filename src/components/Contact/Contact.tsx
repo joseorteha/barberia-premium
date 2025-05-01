@@ -4,35 +4,42 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
 import styles from './Contact.module.scss';
+import { es, en } from '@/i18n/locales';
 
-const contactInfo = [
-  {
-    icon: <FaMapMarkerAlt size={28} />,
-    title: 'Ubicación',
-    content: 'CP 95000, Orizaba, Veracruz, México',
-    link: 'https://maps.google.com'
-  },
-  {
-    icon: <FaPhone size={28} />,
-    title: 'Teléfono',
-    content: '+52 272 296 8204',
-    link: 'tel:+522722968204'
-  },
-  {
-    icon: <FaEnvelope size={28} />,
-    title: 'Email',
-    content: 'contacto@barberiapremium.com',
-    link: 'mailto:contacto@barberiapremium.com'
-  },
-  {
-    icon: <FaClock size={28} />,
-    title: 'Horario',
-    content: 'Lun-Sáb: 9:00 - 20:00',
-    link: null
-  }
-];
+interface ContactProps {
+  language: string;
+}
 
-const Contact = () => {
+const Contact = ({ language }: ContactProps) => {
+  const t = language === 'es' ? es : en;
+
+  const contactInfo = [
+    {
+      icon: <FaMapMarkerAlt size={28} />,
+      title: t.contact.location,
+      content: 'CP 95000, Orizaba, Veracruz, México',
+      link: 'https://maps.google.com'
+    },
+    {
+      icon: <FaPhone size={28} />,
+      title: t.contact.phone,
+      content: '+52 272 296 8204',
+      link: 'tel:+522722968204'
+    },
+    {
+      icon: <FaEnvelope size={28} />,
+      title: t.contact.email,
+      content: 'contacto@barberiapremium.com',
+      link: 'mailto:contacto@barberiapremium.com'
+    },
+    {
+      icon: <FaClock size={28} />,
+      title: t.contact.schedule,
+      content: t.contact.hours,
+      link: null
+    }
+  ];
+
   return (
     <section className={styles.contact} id="contact" aria-label="Información de contacto">
       <div className={styles.container}>
@@ -43,9 +50,9 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Contáctanos</h2>
+          <h2>{t.contact.title}</h2>
           <p>
-            ¿Tienes dudas o quieres agendar una cita? Estamos para ayudarte. ¡Llámanos, escríbenos o visítanos!
+            {t.contact.description}
           </p>
         </motion.div>
 

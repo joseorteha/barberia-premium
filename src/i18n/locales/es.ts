@@ -108,7 +108,12 @@ export const es = {
   },
   contact: {
     title: "Contacta con nosotros",
-    description: "Estamos aquí para atenderte. No dudes en contactarnos para cualquier consulta o reserva."
+    description: "Estamos aquí para atenderte. No dudes en contactarnos para cualquier consulta o reserva.",
+    location: "Ubicación",
+    phone: "Teléfono",
+    email: "Email",
+    schedule: "Horario",
+    hours: "Lun-Sáb: 9:00 - 20:00"
   },
   footer: {
     rights: "Todos los derechos reservados.",

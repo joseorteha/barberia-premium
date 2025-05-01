@@ -108,7 +108,12 @@ export const en = {
   },
   contact: {
     title: "Contact us",
-    description: "We are here to assist you. Feel free to contact us for any inquiry or booking."
+    description: "We are here to assist you. Feel free to contact us for any inquiry or booking.",
+    location: "Location",
+    phone: "Phone",
+    email: "Email",
+    schedule: "Schedule",
+    hours: "Mon-Sat: 9:00 AM - 8:00 PM"
   },
   footer: {
     rights: "All rights reserved.",
