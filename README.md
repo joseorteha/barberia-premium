@@ -19,14 +19,14 @@ Barbería Premium es una web profesional para una barbería moderna, donde los u
 
 ## 🛠️ Tecnologías Utilizadas
 
-| Tecnología         | Descripción                                 |
-|--------------------|---------------------------------------------|
-| [Next.js](https://nextjs.org/)         | Framework React para SSR/SSG y apps modernas |
-| [React](https://react.dev/)            | Librería principal de UI                        |
-| [TypeScript](https://www.typescriptlang.org/) | Tipado estático para mayor robustez             |
-| [SCSS](https://sass-lang.com/)         | Estilos modernos y variables globales           |
-| [Framer Motion](https://www.framer.com/motion/) | Animaciones fluidas y profesionales             |
-| [React Icons](https://react-icons.github.io/react-icons/) | Íconos modernos y personalizables               |
+| Logo | Tecnología | Descripción |
+|------|------------|-------------|
+| ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white) | **Next.js 14** | Framework de React para producción |
+| ![React](https://img.shields.io/badge/React-20232a?logo=react&logoColor=61DAFB) | **React** | Biblioteca para construir interfaces de usuario |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white) | **TypeScript** | Superset de JavaScript que añade tipado estático |
+| ![SCSS](https://img.shields.io/badge/SCSS-cc6699?logo=sass&logoColor=white) | **SCSS Modules** | Estilizado modular y mantenible |
+| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-000000?logo=framer&logoColor=white) | **Framer Motion** | Animaciones fluidas y modernas |
+| ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?logo=react&logoColor=white) | **React Icons** | Íconos modernos y personalizables |
 
 ---
 
@@ -56,7 +56,7 @@ Barbería Premium es una web profesional para una barbería moderna, donde los u
 ### Perfil de Usuario
 ![Perfil](public/screenshots/perfil.png)
 
-> Puedes agregar tus propias capturas en la carpeta `/public/screenshots`.
+
 
 ---
 
