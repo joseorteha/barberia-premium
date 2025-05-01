@@ -1,96 +1,169 @@
-# Barbería Premium
+# 💈 Barbería Premium
 
-Proyecto web moderno para una barbería premium, desarrollado con Next.js 14, React, TypeScript y SCSS Modules.
-
-## Estructura del Proyecto
-
-- **src/app/**  
-  - `layout.tsx`, `page.tsx`, `globals.scss`: Configuración global, layout y página principal.
-- **src/components/**  
-  - **Header/**: Menú de navegación superior fijo, responsivo, con logo y enlaces.
-  - **Hero/**: Sección principal con imagen de fondo, título, subtítulo y botón de llamada a la acción.
-  - **Services/**: Cards de servicios con imágenes, iconos y precios.
-  - **Gallery/**: Carrusel de imágenes de cortes y estilos.
-  - **Team/**: Presentación del equipo de barberos con fotos y redes sociales.
-  - **Testimonials/**: Testimonios de clientes con foto y calificación.
-  - **FAQ/**: Preguntas frecuentes.
-  - **BookingForm/**: Formulario de reserva.
-  - **Contact/**: Información de contacto y mapa.
-  - **Footer/**: Pie de página con enlaces y redes sociales.
-- **public/**  
-  - Imágenes y recursos estáticos.
-
-## Instalación y uso
-
-```bash
-npm install
-npm run dev
-```
-Abre [http://localhost:3000](http://localhost:3000) para ver la web.
-
-## Características principales
-
-- **Diseño moderno y responsivo**: Adaptado a desktop, tablet y móvil.
-- **Animaciones suaves**: Uso de Framer Motion para transiciones y efectos.
-- **Optimización de imágenes**: Next.js Image para carga eficiente.
-- **Accesibilidad**: Etiquetas ARIA, contraste y navegación por teclado.
-- **Componentes reutilizables**: Estructura modular y escalable.
-- **Formulario de reservas**: Integrado y funcional.
-- **Carrusel de galería**: Swiper.js para mostrar trabajos destacados.
-- **Soporte multilenguaje**: Preparado para internacionalización.
-
-## Estructura de la página principal
-
-- **Header**: Menú fijo superior con logo y navegación.
-- **Hero**: Imagen de fondo, título, subtítulo y botón de reserva.
-- **Servicios**: Cards con imágenes, iconos y precios.
-- **Galería**: Carrusel de fotos de cortes y estilos.
-- **Equipo**: Fotos y perfiles de los barberos.
-- **Testimonios**: Opiniones de clientes.
-- **FAQ**: Preguntas frecuentes.
-- **Formulario de reserva**: Reserva tu cita fácilmente.
-- **Contacto**: Dirección, teléfono, email y mapa.
-- **Footer**: Enlaces legales y redes sociales.
-
-## Personalización
-
-- Cambia imágenes en `/public` o en los arrays de cada componente.
-- Modifica colores y fuentes en `src/app/globals.scss`.
-- Edita textos y secciones en los componentes correspondientes.
+¡Bienvenido a **Barbería Premium**!  
+Tu destino para un estilo único, servicios de barbería de alta calidad y una experiencia digital moderna.
 
 ---
 
-## Getting Started
+## 🚀 ¿Qué es este proyecto?
 
-First, run the development server:
+Barbería Premium es una web profesional para una barbería moderna, donde los usuarios pueden:
+- Consultar servicios y precios en **pesos mexicanos (MXN)**.
+- Reservar citas fácilmente vía WhatsApp.
+- Ver ubicación en Google Maps.
+- Contactar y seguir en redes sociales.
+- Registrarse, iniciar sesión y gestionar su perfil.
+- Disfrutar de una experiencia visual atractiva y 100% responsive.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Tecnología         | Descripción                                 |
+|--------------------|---------------------------------------------|
+| [Next.js](https://nextjs.org/)         | Framework React para SSR/SSG y apps modernas |
+| [React](https://react.dev/)            | Librería principal de UI                        |
+| [TypeScript](https://www.typescriptlang.org/) | Tipado estático para mayor robustez             |
+| [SCSS](https://sass-lang.com/)         | Estilos modernos y variables globales           |
+| [Framer Motion](https://www.framer.com/motion/) | Animaciones fluidas y profesionales             |
+| [React Icons](https://react-icons.github.io/react-icons/) | Íconos modernos y personalizables               |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Características Principales
 
-To learn more about Next.js, take a look at the following resources:
+- **Precios en MXN**: Todos los servicios y productos muestran precios en pesos mexicanos.
+- **Reservas por WhatsApp**: Reserva tu cita en segundos, directo a WhatsApp.
+- **Mapa interactivo**: Ubicación exacta en Orizaba, Veracruz (CP 95000).
+- **Redes sociales**: Enlaces directos a Facebook, Instagram, LinkedIn y WhatsApp.
+- **Autenticación Frontend**: Registro, login y perfil de usuario (con edición y avatar).
+- **Diseño Responsive**: Se adapta perfectamente a cualquier dispositivo.
+- **FAQ, Testimonios, Galería y más**: Todo lo que una barbería premium necesita.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Screenshots
 
-## Deploy on Vercel
+### Home
+![Home](public/screenshots/home.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Servicios
+![Servicios](public/screenshots/servicios.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Reservas
+![Reservas](public/screenshots/reservas.png)
+
+### Perfil de Usuario
+![Perfil](public/screenshots/perfil.png)
+
+> Puedes agregar tus propias capturas en la carpeta `/public/screenshots`.
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Precios en MXN y servicios personalizados
+- [x] Reservas vía WhatsApp
+- [x] Mapa de ubicación integrado
+- [x] Autenticación y perfil de usuario (frontend)
+- [x] Footer y contacto con redes sociales reales
+- [x] Diseño responsive y animaciones modernas
+- [ ] Panel de administración para barberos
+- [ ] Historial de reservas para usuarios
+- [ ] Notificaciones por correo/WhatsApp
+- [ ] Integración de pagos en línea
+- [ ] Blog de consejos y tendencias
+- [ ] ¡Y mucho más!
+
+---
+
+## ❓ FAQ
+
+### ¿Puedo reservar mi cita en línea?
+¡Sí! Solo llena el formulario y te llevamos directo a WhatsApp para confirmar tu cita.
+
+### ¿Dónde están ubicados?
+En Orizaba, Veracruz, CP 95000. Puedes ver el mapa en la sección de contacto.
+
+### ¿Puedo editar mi perfil?
+Sí, después de iniciar sesión puedes editar tu nombre, avatar, teléfono y bio.
+
+### ¿Tienen productos a la venta?
+¡Claro! Consulta la sección de productos para ver lo que ofrecemos.
+
+### ¿Puedo pagar en línea?
+Próximamente. Por ahora, el pago es en el local.
+
+---
+
+## 📦 Instalación y Uso
+
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/joseorteha/barberia-premium.git
+   cd barberia-premium
+   ```
+
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+
+3. **Inicia el servidor de desarrollo**
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
+
+4. **Abre en tu navegador**
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🌎 Demo
+
+> Próximamente en Vercel...
+
+---
+
+## 📍 Contacto y Redes
+
+- 📍 **Ubicación:** Orizaba, Veracruz, CP 95000
+- 📞 **Teléfono:** +52 272 296 8204
+- 📧 **Email:** contacto@barberiapremium.com
+- [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white)](https://www.facebook.com/joseortega.exe1)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/mr.orteg4/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-orteg4)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/52722968204)
+
+---
+
+## 📄 Licencia
+
+Este proyecto es open source y está bajo la licencia MIT.
+
+---
+
+## 🤝 Contribuciones
+
+¡Pull requests y sugerencias son bienvenidas!  
+Si quieres mejorar la web, abre un issue o haz un fork.
+
+---
+
+## ⭐ Créditos
+
+- **Desarrollo y diseño:** [José Ortega](https://www.linkedin.com/in/jose-orteg4)
+- **Asistencia IA:** ChatGPT (OpenAI)
+- **Inspiración:** Todos los barberos y clientes que inspiran este proyecto.
+- **Agradecimientos:** A la comunidad open source.
+
+---
+
+¡Gracias por visitar **Barbería Premium**!  
+💈✂️ ¡Tu estilo, nuestra pasión!
