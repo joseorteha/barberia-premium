@@ -1,0 +1,369 @@
+.booking {
+  padding: 6rem 0;
+  background: var(--background-light);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 2px;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.form {
+  background: var(--background);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+  .formGroup {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--text-primary);
+
+      .inputIcon {
+        color: var(--primary-color);
+        font-size: 1.1rem;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: var(--background-light);
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.1);
+      }
+
+      &::placeholder {
+        color: var(--text-secondary);
+        opacity: 0.7;
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+
+  .formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+
+    &:hover {
+      background: var(--primary-color-dark);
+      transform: translateY(-2px);
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .icon {
+      font-size: 1.2rem;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .spinner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(255,255,255,0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 0.8s linear infinite;
+      }
+    }
+  }
+}
+
+.info {
+  background: var(--background);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 2rem;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 2px;
+    }
+  }
+
+  .infoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        color: var(--primary-color);
+        transform: translateX(5px);
+
+        .icon {
+          transform: scale(1.1);
+        }
+      }
+
+      .icon {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .info {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding: 3rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .form,
+  .info {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .formGroup {
+    margin-bottom: 1.2rem;
+
+    label {
+      font-size: 0.98rem;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.98rem;
+    }
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .submitButton {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .info {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+}
+
+@media (max-width: 480px) {
+  .booking {
+    padding: 2rem 0;
+  }
+
+  .header {
+    margin-bottom: 1.2rem;
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .form,
+  .info {
+    padding: 0.7rem;
+    border-radius: 8px;
+  }
+
+  .formGroup {
+    margin-bottom: 0.7rem;
+    label {
+      font-size: 0.92rem;
+    }
+    input,
+    select,
+    textarea {
+      padding: 0.5rem 0.7rem;
+      font-size: 0.92rem;
+    }
+  }
+  .submitButton {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .info {
+    margin-top: 2rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    gap: 2.2rem;
+  }
+  .info {
+    margin-top: 2.7rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  }
+} 

@@ -1,0 +1,327 @@
+.bookingForm {
+  padding: var(--spacing-xl);
+  background: var(--color-secondary);
+  border-radius: var(--border-radius-lg);
+  max-width: 600px;
+  margin: 0 auto;
+
+  .title {
+    color: var(--color-primary);
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    font-family: var(--font-lora);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .label {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+  }
+
+  .textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .button {
+    background: var(--color-primary);
+    color: var(--color-background);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-md);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+    }
+  }
+
+  .error {
+    color: var(--color-error);
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+  }
+}
+
+.bookingSection {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(to bottom, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.1));
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.content {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+
+  h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-lora);
+  }
+
+  p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+  }
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+  background: var(--color-background);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form {
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--color-text);
+    font-weight: 500;
+
+    svg {
+      color: var(--color-primary);
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.serviceSummary {
+  background: rgba(212, 175, 55, 0.05);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--spacing-md);
+
+  h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+  }
+
+  .summaryDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-text);
+
+      strong {
+        color: var(--color-text);
+      }
+    }
+  }
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--spacing-lg);
+
+  svg {
+    font-size: var(--font-size-xl);
+  }
+
+  &:hover {
+    background: rgba(212, 175, 55, 0.9);
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  h3 {
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-lora);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-sm);
+      color: var(--color-text);
+      font-size: var(--font-size-base);
+
+      svg {
+        color: var(--color-primary);
+        font-size: 1.2em;
+        flex-shrink: 0;
+      }
+
+      span {
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.successMessage {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-success);
+  color: var(--color-background);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .bookingSection {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .form {
+    padding: var(--spacing-lg);
+  }
+
+  .infoCard {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    h2 {
+      font-size: var(--font-size-xl);
+    }
+
+    p {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .form {
+    padding: var(--spacing-md);
+  }
+
+  .submitButton {
+    font-size: var(--font-size-base);
+  }
+} 

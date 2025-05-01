@@ -1,0 +1,321 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  width: 100%;
+}
+
+.section {
+  padding: var(--spacing-xxl) 0;
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
+.sectionAlt {
+  background: var(--color-secondary);
+}
+
+.sectionDark {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.sectionLight {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.sectionPrimary {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.sectionSecondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.sectionGradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  color: var(--color-background);
+}
+
+.sectionPattern {
+  background: var(--color-background);
+  background-image: url('/pattern.svg');
+  background-repeat: repeat;
+  background-size: 100px;
+  color: var(--color-text);
+}
+
+.sectionImage {
+  position: relative;
+  color: var(--color-text);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.sectionOverlay {
+  position: relative;
+  color: var(--color-text);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.sectionParallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-text);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.sectionVideo {
+  position: relative;
+  color: var(--color-text);
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.sectionFull {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionNarrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sectionWide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionCentered {
+  text-align: center;
+}
+
+.sectionLeft {
+  text-align: left;
+}
+
+.sectionRight {
+  text-align: right;
+}
+
+.sectionTop {
+  padding-top: 0;
+}
+
+.sectionBottom {
+  padding-bottom: 0;
+}
+
+.sectionNoPadding {
+  padding: 0;
+}
+
+.sectionNoMargin {
+  margin: 0;
+}
+
+.sectionNoBorder {
+  border: none;
+}
+
+.sectionNoBackground {
+  background: none;
+}
+
+.sectionNoColor {
+  color: inherit;
+}
+
+.sectionNoShadow {
+  box-shadow: none;
+}
+
+.sectionNoOverflow {
+  overflow: hidden;
+}
+
+.sectionNoPosition {
+  position: static;
+}
+
+.sectionNoZIndex {
+  z-index: auto;
+}
+
+.sectionNoTransform {
+  transform: none;
+}
+
+.sectionNoTransition {
+  transition: none;
+}
+
+.sectionNoAnimation {
+  animation: none;
+}
+
+.sectionNoFilter {
+  filter: none;
+}
+
+.sectionNoBackdrop {
+  backdrop-filter: none;
+}
+
+.sectionNoBlur {
+  filter: blur(0);
+}
+
+.sectionNoOpacity {
+  opacity: 1;
+}
+
+.sectionNoVisibility {
+  visibility: visible;
+}
+
+.sectionNoDisplay {
+  display: block;
+}
+
+.sectionNoFlex {
+  display: block;
+}
+
+.sectionNoGrid {
+  display: block;
+}
+
+.sectionNoFloat {
+  float: none;
+}
+
+.sectionNoClear {
+  clear: none;
+}
+
+.sectionNoWidth {
+  width: auto;
+}
+
+.sectionNoHeight {
+  height: auto;
+}
+
+.sectionNoMaxWidth {
+  max-width: none;
+}
+
+.sectionNoMaxHeight {
+  max-height: none;
+}
+
+.sectionNoMinWidth {
+  min-width: 0;
+}
+
+.sectionNoMinHeight {
+  min-height: 0;
+} 

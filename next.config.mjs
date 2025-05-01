@@ -8,7 +8,10 @@ const nextConfig = {
   sassOptions: {
     includePaths: ['./src/styles'],
   },
-  transpilePackages: ['framer-motion'],
+  transpilePackages: ['framer-motion', 'swiper'],
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 export default nextConfig; 

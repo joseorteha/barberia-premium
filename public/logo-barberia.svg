@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Círculos de los mangos -->
+    <circle cx="14" cy="34" r="6" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+    <circle cx="34" cy="34" r="6" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+    <!-- Cuchillas -->
+    <path d="M16 32 L24 10 L32 32" stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M24 10 Q24 24 14 34" stroke="#D4AF37" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M24 10 Q24 24 34 34" stroke="#D4AF37" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Tornillo central -->
+    <circle cx="24" cy="18" r="2.2" fill="#D4AF37" stroke="#222" stroke-width="1.2"/>
+  </g>
+</svg> 

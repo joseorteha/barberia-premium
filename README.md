@@ -1,4 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Barbería Premium
+
+Proyecto web moderno para una barbería premium, desarrollado con Next.js 14, React, TypeScript y SCSS Modules.
+
+## Estructura del Proyecto
+
+- **src/app/**  
+  - `layout.tsx`, `page.tsx`, `globals.scss`: Configuración global, layout y página principal.
+- **src/components/**  
+  - **Header/**: Menú de navegación superior fijo, responsivo, con logo y enlaces.
+  - **Hero/**: Sección principal con imagen de fondo, título, subtítulo y botón de llamada a la acción.
+  - **Services/**: Cards de servicios con imágenes, iconos y precios.
+  - **Gallery/**: Carrusel de imágenes de cortes y estilos.
+  - **Team/**: Presentación del equipo de barberos con fotos y redes sociales.
+  - **Testimonials/**: Testimonios de clientes con foto y calificación.
+  - **FAQ/**: Preguntas frecuentes.
+  - **BookingForm/**: Formulario de reserva.
+  - **Contact/**: Información de contacto y mapa.
+  - **Footer/**: Pie de página con enlaces y redes sociales.
+- **public/**  
+  - Imágenes y recursos estáticos.
+
+## Instalación y uso
+
+```bash
+npm install
+npm run dev
+```
+Abre [http://localhost:3000](http://localhost:3000) para ver la web.
+
+## Características principales
+
+- **Diseño moderno y responsivo**: Adaptado a desktop, tablet y móvil.
+- **Animaciones suaves**: Uso de Framer Motion para transiciones y efectos.
+- **Optimización de imágenes**: Next.js Image para carga eficiente.
+- **Accesibilidad**: Etiquetas ARIA, contraste y navegación por teclado.
+- **Componentes reutilizables**: Estructura modular y escalable.
+- **Formulario de reservas**: Integrado y funcional.
+- **Carrusel de galería**: Swiper.js para mostrar trabajos destacados.
+- **Soporte multilenguaje**: Preparado para internacionalización.
+
+## Estructura de la página principal
+
+- **Header**: Menú fijo superior con logo y navegación.
+- **Hero**: Imagen de fondo, título, subtítulo y botón de reserva.
+- **Servicios**: Cards con imágenes, iconos y precios.
+- **Galería**: Carrusel de fotos de cortes y estilos.
+- **Equipo**: Fotos y perfiles de los barberos.
+- **Testimonios**: Opiniones de clientes.
+- **FAQ**: Preguntas frecuentes.
+- **Formulario de reserva**: Reserva tu cita fácilmente.
+- **Contacto**: Dirección, teléfono, email y mapa.
+- **Footer**: Enlaces legales y redes sociales.
+
+## Personalización
+
+- Cambia imágenes en `/public` o en los arrays de cada componente.
+- Modifica colores y fuentes en `src/app/globals.scss`.
+- Edita textos y secciones en los componentes correspondientes.
+
+---
 
 ## Getting Started
 
