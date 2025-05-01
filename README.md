@@ -45,16 +45,20 @@ Barbería Premium es una web profesional para una barbería moderna, donde los u
 ## 🖼️ Screenshots
 
 ### Home
-![Home](public/screenshots/home.png)
+![image](https://github.com/user-attachments/assets/ec90eb59-6ebb-454c-a113-2a4476d0149f)
 
-### Servicios
-![Servicios](public/screenshots/servicios.png)
+
+### Galeria
+![image](https://github.com/user-attachments/assets/1cbf6e31-66c6-484c-b3f2-bab6c442cb4b)
+
 
 ### Reservas
-![Reservas](public/screenshots/reservas.png)
+![image](https://github.com/user-attachments/assets/5ed46207-0014-48f6-a712-e417f4040adf)
+
 
 ### Perfil de Usuario
-![Perfil](public/screenshots/perfil.png)
+![image](https://github.com/user-attachments/assets/0a3a0723-da41-4c21-a156-bee910f0d3ca)
+
 
 
 
