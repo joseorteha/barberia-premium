@@ -131,7 +131,7 @@ Próximamente. Por ahora, el pago es en el local.
 
 ## 🌎 Demo
 
-> Próximamente en Vercel...
+https://barberzon.netlify.app/
 
 ---
 
