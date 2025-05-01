@@ -159,7 +159,6 @@ Si quieres mejorar la web, abre un issue o haz un fork.
 ## ⭐ Créditos
 
 - **Desarrollo y diseño:** [José Ortega](https://www.linkedin.com/in/jose-orteg4)
-- **Asistencia IA:** ChatGPT (OpenAI)
 - **Inspiración:** Todos los barberos y clientes que inspiran este proyecto.
 - **Agradecimientos:** A la comunidad open source.
 
