@@ -4,10 +4,13 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGlobe } from 'react-icons/fa';
 import styles from './LanguageSelector.module.scss';
-import { useLanguage } from '@/context/LanguageContext';
 
-const LanguageSelector = () => {
-  const { language, setLanguage, t } = useLanguage();
+interface LanguageSelectorProps {
+  currentLang: string;
+  onLanguageChange: (lang: string) => void;
+}
+
+const LanguageSelector = ({ currentLang, onLanguageChange }: LanguageSelectorProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
@@ -24,7 +27,7 @@ const LanguageSelector = () => {
         whileTap={{ scale: 0.95 }}
       >
         <FaGlobe />
-        <span>{languages.find(lang => lang.code === language)?.name}</span>
+        <span>{languages.find(lang => lang.code === currentLang)?.name}</span>
       </motion.button>
 
       {isOpen && (
@@ -37,9 +40,9 @@ const LanguageSelector = () => {
           {languages.map(lang => (
             <button
               key={lang.code}
-              className={`${styles.option} ${language === lang.code ? styles.active : ''}`}
+              className={`${styles.option} ${currentLang === lang.code ? styles.active : ''}`}
               onClick={() => {
-                setLanguage(lang.code as 'es' | 'en');
+                onLanguageChange(lang.code);
                 setIsOpen(false);
               }}
             >
